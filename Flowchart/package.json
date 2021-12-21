@@ -1,0 +1,42 @@
+{
+  "name": "FlowChart",
+  "version": "1.5.6",
+  "description": "",
+  "main": "./bin/www",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "latest",
+    "bcryptjs": "latest",
+    "body-parser": "latest",
+    "connect-flash": "latest",
+    "cors": "latest",
+    "debug": "latest",
+    "dotenv": "latest",
+    "ejs": "latest",
+    "express": "latest",
+    "express-ejs-layouts": "latest",
+    "express-session": "latest",
+    "hbs": "latest",
+    "google-auth-library": "latest",
+    "morgan": "latest",
+    "multer": "latest",
+    "mysql2": "latest",
+    "nodemailer": "latest",
+    "nodemailer-express-handlebars": "latest",
+    "nodemon": "latest",
+    "passport-2fa-totp": "latest",
+    "passport": "latest",
+    "passport-local": "latest",
+    "redis": "latest",
+    "request": "latest",
+    "sequelize": "latest",
+    "serve-favicon": "latest",
+    "socket.io": "latest",
+    "speakeasy": "latest"
+  },
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  }
+}

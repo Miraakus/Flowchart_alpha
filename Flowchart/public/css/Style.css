@@ -1,0 +1,305 @@
+﻿#body {
+    background-color: silver;
+}
+
+#canvas {
+     width: 100%;
+     height: 200%;
+}
+
+#canvas_addon {
+	 border: 1px solid black;
+	 width: 100%;
+     height: 100%;
+	 margin-top: 10px;
+}
+
+/* Box styles */
+#myBox {
+    border: none;
+    width: 90%;
+    height: 90%;
+    overflow: scroll;
+}
+
+#myBox_learner {
+    border: none;
+    width: 100%;
+    height: 90%;
+    overflow: scroll;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+/*Горизонтальное меню*/
+#menu_horizontal {
+    position: absolute;
+    width: 100%;
+    height: 10.5%;
+    text-decoration: none;
+    color: white;
+    background-color: #2175bc;
+}
+
+/*Элементы горизонтального меню*/
+
+/*решетка на холсте*/
+#grid_style {
+    width: 10%;
+    position: absolute;
+    left: 1%;
+    top: 35%
+}
+
+#dim {
+    width: 25%;
+    position: absolute;
+    left: 55%;
+}
+
+#coordinates {
+    width: 10%;
+    position: absolute;
+    left: 12%;
+    top: 35%;
+}
+
+#reset_img {
+    width: 2%;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+}
+
+#undo_img {
+    width: 2%;
+    position: absolute;
+    left: 22%;
+    top: 35%;
+}
+
+#redo_img {
+    width: 2%;
+    position: absolute;
+    left: 24%;
+    top: 35%;
+}
+
+#selection_img {
+    width: 3%;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+}
+
+#comment {
+    width: 2%;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+}
+
+#text_nodes {
+    width: 1%;
+    position: absolute;
+    left: 38%;
+    top: 35%;
+}
+
+#text_links {
+    width: 1%;
+    position: absolute;
+    left: 40%;
+    top: 35%;
+}
+
+#text_blocks {
+    width: 1%;
+    position: absolute;
+    left: 42%;
+    top: 35%;
+}
+
+#text_type {
+    width: 1%;
+    position: absolute;
+    left: 44%;
+    top: 35%;
+}
+
+#text_content {
+    width: 1%;
+    position: absolute;
+    left: 46%;
+    top: 35%;
+}
+
+#db {
+	width: 10%;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+	background-color: silver;
+	border-radius: 5px;
+}
+
+#db:hover {
+    background-color: green;
+    color: white;
+}
+/*стрелка вверх*/
+#upload_img {
+    width: 2%;
+    position: absolute;
+    left: 70%;
+    top: 35%;
+}
+/*стрелка вниз*/
+#download_img {
+    width: 2%;
+    position: absolute;
+    left: 73%;
+    top: 35%;
+}
+/*поле изменения текста*/
+#text_change {
+    width: 15%;
+    position: absolute;
+    left: 75%;
+    top: 35%;
+}
+
+#learn {
+	width: 15%;
+    position: absolute;
+    left: 85%;
+    top: 50%;
+	color:black;
+}
+
+#refer {
+	width: 15%;
+    position: absolute;
+    left: 85%;
+    top: 15%;
+	color:black;
+}
+
+#btnShow {
+	width: 10%;
+    position: absolute;
+    left: 86%;
+    top: 35%;
+	background-color: silver;
+	border-radius: 5px;
+}
+
+#errorText {
+    position: absolute;
+    height: 20%;
+    top: 100%;
+    text-decoration: none;
+    color: red;
+    border: 1px solid black;
+}
+
+/* Vertical Menu Style*/
+#menu_vertical {
+    position: absolute;
+    left: 90%;
+    top: 1%;
+    width: 10%;
+    height: 100%;
+}
+/*контейнеры элементов вертикального меню*/
+#menu_vertical div.div_style {
+    display: block;
+    padding: 3px 3px 5px 10px;
+    width: 90%;
+    height: 15%;
+    text-decoration: none;
+    color: white;
+    background-color: #2175bc;
+    border-bottom: 1px solid black;
+}
+
+#menu_vertical div:hover {
+    background-color: #2586d7;
+    border-left-color: #1c64d1;
+}
+
+#menu_vertical div.menutitle {
+    text-align: center;
+    color: white;
+    padding: 1px 0px 1px 0px;
+    background-color: black;
+    font: bold 90% 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+}
+/*Элементы вертикального меню*/
+#rect_img {
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 7%;
+}
+
+#rhombus_img {
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+
+#parallelogram_img {
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 41%;
+}
+
+#preprocess_img {
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 56%;
+}
+
+#ellipse_img {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 73%;
+}
+
+#connector_img {
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 85%;
+}
+
+#canvas_reference {
+     width: 100%;
+     height: 102%;
+}
+
+#timer {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+}

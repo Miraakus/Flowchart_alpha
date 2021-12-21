@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>FlowChart Editor</title>
+    <link href="/images/favicon.ico" rel="icon"/>
+    <link type="text/css" href="/css/Style.css" rel="stylesheet" >
+    <script type="text/javascript" src="/scripts/Draw.js"></script>
+	<script type="text/javascript" src="/scripts/Event.js"></script>
+    <script type="text/javascript" src="/scripts/ManagerMenu.js"></script>
+    <script type="text/javascript" src="/scripts/Selection.js"></script>
+	<script type="text/javascript" src="/scripts/Shapes.js"></script>
+	<script type="text/javascript" src="/scripts/Trash.js"></script>
+    <script type="text/javascript" src="/scripts/UndoRedo.js"></script>
+    <script type="text/javascript" src="/scripts/DiagramFlow.js"></script>
+    <script type="text/javascript" src="/scripts/Draw_addon.js"></script>
+    
+    <link type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div id="myBox">
+        <canvas id="canvas">
+            <img src="/images/trash_up.png" id="trash_up" />
+            <img src="/images/trash_down.png" id="trash_down" />
+        </canvas>
+		<canvas id="canvas_addon"></canvas>
+    </div>
+    <div id="menu_vertical">
+        <div class="menutitle">Shapes</div>
+        <div class="div_style" id="rectangle"><img src="/images/rectangle.png" id="rect_img" /></div>
+        <div class="div_style" id="rhombus"><img src="/images/rhombus.png" id="rhombus_img" /></div>
+        <div class="div_style" id="parallelogram"><img src="/images/parallelogram.png" id="parallelogram_img" /></div>
+		<div class="div_style" id="preprocess"><img src="/images/preprocess.png" id="preprocess_img" /></div>
+        <div class="div_style" id="ellipse"><img src="/images/ellipse.png" id="ellipse_img" /></div>
+		<div class="div_style" id="connector"><img src="/images/connector.png" id="connector_img"/></div>
+    </div>
+    <div id="menu_horizontal">
+        <div id="grid_style">
+            <form name="grid">
+                <label> Grid <input type="checkbox" name="choice" onchange="Choice()" ></label>
+                <input type="number" name="quantity" min="1" max="5" onchange="Quantity()" value="1" id="dim">
+            </form>
+        </div>
+        <div id="coordinates"></div>
+        <img src="/images/reset.png" id="reset_img" title="Reset" />
+        <img src="/images/undo.png" id="undo_img" title="Undo" />
+        <img src="/images/redo.png" id="redo_img" title="Redo" />
+        <img src="/images/text.png" id="comment" title="Comment" />
+        <div id="text">
+		    <form method='post' action={{url}}>
+			    <textarea id="text_nodes" name="text_nodes" style="display:none;">{{teacher_nodes}}</textarea>
+				<textarea id="text_links" name="text_links" style="display:none;">{{teacher_links}}</textarea>
+				<textarea id="text_blocks" name="text_blocks" style="display:none;">{{teacher_blocks}}</textarea>
+                <textarea id="text_description" name="text_description" style="display:none;">{{text_description}}</textarea>
+		        <button id="db" type='submit'>Upload to database</button>   
+            </form>
+			<textarea id="text_type" name="text_type" style="display:none;"></textarea>
+            <textarea id="text_content" name="text_content" style="display:none;"></textarea>
+		    <textarea id="text_index" name="text_index" style="display:none;"></textarea>
+		</div> <!-- this div will contain an input type="text" created in js -->
+        <img src="/images/selection.png" id="selection_img" title="Selection one or more shapes" />
+		<img src="/images/download.png" id="download_img" title="Save" />
+        <img src="/images/upload.png" id="upload_img" title="Restore" />
+        <script type="text/javascript">
+                  $(function () {
+                             let Title = "Определение алгоритма";
+                             $("#btnShow").click(function () {
+                                           $("#dialog").dialog({
+                                                        title: Title,
+                                                        autoOpen: true, 
+                                                        width: 600, 
+                                                        height: 400, 
+                                                        maxWidth: 900,   
+                                                        maxHeight: 600,
+                                                        position: 'center', 
+                                                        resizable: true, 
+                                                        draggable: true });
+                                           });
+                             });
+        </script>
+        <input id="btnShow" type="button" value="Show description" />
+        <div id="dialog" style="overflow:scroll;display: none">
+             <div>
+               <iframe style="width:100%;height:100%;" src={{text_description}}></iframe>
+             </div>
+        </div>
+		<div id="text_change"></div>
+    </div>
+</body>
+</html>

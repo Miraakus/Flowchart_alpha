@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <title>FlowChart Editor</title>
+    <link href="/images/favicon.ico" rel="icon"/>
+    <link href="/css/HomeStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+   <h1 class="text-center">Dashboard</h1>
+   <p class="text-center">Welcome <%= name %></p>
+   <nav class="text-center" id="menu">
+    <label for="tm" id="toggle-menu">Дисциплины<span class="drop-icon">▾</span></label>
+    <input type="checkbox" id="tm">
+    <ul class="main-menu clearfix">
+      <li><a href="#">Теория автоматического управления 
+          <span class="drop-icon">▾</span>
+          <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+          </a>
+        <input type="checkbox" id="sm1">
+        <ul class="sub-menu">
+          <li><a href="#">Блок преподавателя
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
+            </a>
+            <input type="checkbox" id="sm2">
+            <ul class="sub-menu">
+              <li><a href="/teacher1">Пример 1</a></li>
+              <li><a href="/teacher2">Пример 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Блок обучаемого
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm3">▾</label>
+            </a>
+            <input type="checkbox" id="sm3">
+            <ul class="sub-menu">
+              <li><a href="/learner1">Пример 1</a></li>
+              <li><a href="/learner2">Пример 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Эталонные решения
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm4">▾</label>
+            </a>
+            <input type="checkbox" id="sm4">
+            <ul class="sub-menu">
+              <li><a href="/reference1">Пример 1</a></li>
+              <li><a href="/reference2">Пример 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Описание
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm5">▾</label>
+            </a>
+            <input type="checkbox" id="sm5">
+            <ul class="sub-menu">
+              <li><a href="">Пример 1</a></li>
+              <li><a href="">Пример 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Маркетинг и логистика 
+          <span class="drop-icon">▾</span>
+          <label title="Toggle Drop-down" class="drop-icon" for="sm6">▾</label>
+          </a>
+        <input type="checkbox" id="sm6">
+        <ul class="sub-menu">
+          <li><a href="#">Блок преподавателя
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm7">▾</label>
+            </a>
+            <input type="checkbox" id="sm7">
+            <ul class="sub-menu">
+              <li><a href="/teacher4">Выбор стратегии АТП</a></li>
+              <li><a href="/teacher5">GBDT algorithm</a></li>
+              <li><a href="/teacher6">Продажа товара</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Блок обучаемого
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm8">▾</label>
+            </a>
+            <input type="checkbox" id="sm8">
+            <ul class="sub-menu">
+              <li><a href="/learner4">Выбор стратегии АТП</a></li>
+              <li><a href="/learner5">GBDT algorithm</a></li>
+              <li><a href="/learner6">Продажа товара</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Эталонные решения
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm9">▾</label>
+            </a>
+            <input type="checkbox" id="sm9">
+            <ul class="sub-menu">
+              <li><a href="/reference4">Выбор стратегии АТП</a></li>
+              <li><a href="/reference5">GBDT algorithm</a></li>
+              <li><a href="/reference6">Продажа товара</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Описание
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm10">▾</label>
+            </a>
+            <input type="checkbox" id="sm10">
+            <ul class="sub-menu">
+              <li><a href="https://drive.google.com/file/d/1Mr7oCjIR8cd9rZMupzw6BNk48R0xOiXD/view?usp=sharing">Выбор стратегии АТП</a></li>
+              <li><a href="https://drive.google.com/file/d/1NCFCVWl-ujAwmV-dpG_rcxsY_9hXBBIL/view?usp=sharing">GBDT algorithm</a></li>
+              <li><a href="">Пример 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+        <li><a href="#">Психиатрия
+          <span class="drop-icon">▾</span>
+          <label title="Toggle Drop-down" class="drop-icon" for="sm11">▾</label>
+          </a>
+        <input type="checkbox" id="sm11">
+        <ul class="sub-menu">
+          <li><a href="#">Блок преподавателя
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm12">▾</label>
+            </a>
+            <input type="checkbox" id="sm12">
+            <ul class="sub-menu">
+              <li><a href="/teacher7">Пример 1</a></li>
+              <li><a href="/teacher8">Пример 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Блок обучаемого
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm13">▾</label>
+            </a>
+            <input type="checkbox" id="sm13">
+            <ul class="sub-menu">
+              <li><a href="/learner7">Пример 1</a></li>
+              <li><a href="/learner8">Пример 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Эталонные решения
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm14">▾</label>
+            </a>
+            <input type="checkbox" id="sm14">
+            <ul class="sub-menu">
+              <li><a href="/reference7">Пример 1</a></li>
+              <li><a href="/reference8">Пример 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Описание
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm15">▾</label>
+            </a>
+            <input type="checkbox" id="sm15">
+            <ul class="sub-menu">
+              <li><a href="https://minzdrav.gov-murman.ru/documents/poryadki-okazaniya-meditsinskoy-pomoshchi/2249.pdf">Пример 1</a></li>
+              <li><a href="https://www.researchgate.net/publication/320042811_Diagnosing_and_Treating_Patients_With_Mixed_Features_Academic_Highlights">
+                  Пример 2</a></li>
+              <li><a href="https://www.healthquality.va.gov/bipolar/bd_305_full.pdf">Пример 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Алгоритмы и структуры данных 
+          <span class="drop-icon">▾</span>
+          <label title="Toggle Drop-down" class="drop-icon" for="sm16">▾</label>
+          </a>
+        <input type="checkbox" id="sm16">
+        <ul class="sub-menu">
+          <li><a href="#">Блок преподавателя
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm17">▾</label>
+            </a>
+            <input type="checkbox" id="sm17">
+            <ul class="sub-menu">
+              <li><a href="/teacher9">Сортировка выбором</a></li>
+              <li><a href="/teacher10">Двоичный поиск</a></li>
+              <li><a href="/teacher11">Задача о восьми ферзях</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Блок обучаемого
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm18">▾</label>
+            </a>
+            <input type="checkbox" id="sm18">
+            <ul class="sub-menu">
+              <li><a href="/learner9">Сортировка выбором</a></li>
+              <li><a href="/learner10">Двоичный поиск</a></li>
+              <li><a href="/learner11">Задача о восьми ферзях</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Эталонные решения
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm19">▾</label>
+            </a>
+            <input type="checkbox" id="sm19">
+            <ul class="sub-menu">
+              <li><a href="/reference9">Сортировка выбором</a></li>
+              <li><a href="/reference10">Двоичный поиск</a></li>
+              <li><a href="/reference11">Задача о восьми ферзях</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Описание
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm20">▾</label>
+            </a>
+            <input type="checkbox" id="sm20">
+            <ul class="sub-menu">
+              <li><a href="http://tka4.org/materials/lib/Articles-Books/Numerical%20Algorithms/%D0%92%D0%B8%D1%80%D1%82%20%D0%9D.%20%D0%90%D0%9B%D0%93%D0%9E%D0%A0%D0%98%D0%A2%D0%9C%D0%AB%20%D0%98%20%D0%A1%D0%A2%D0%A0%D0%A3%D0%9A%D0%A2%D0%A3%D0%A0%D0%AB%20%D0%94%D0%90%D0%9D%D0%9D%D0%AB%D0%A5.%20%D0%9C.%D0%9C%D0%B8%D1%80%201989.pdf">Примеры</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+  </ul>
+</nav>
+<a href="/users/logout" class="btn btn-primary">Logout</a>
+</body>
+</html>
